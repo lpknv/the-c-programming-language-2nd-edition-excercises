@@ -9,15 +9,14 @@
 #define UPPER 300
 #define STEP 20
 
-void calc() {
-  int celsius = 0;
-  int fahr = 0;
+int main() {
+  float celsius = 0;
+  float fahr = 0;
 
+  printf("Fahrenheit\tCelsius\n");
   while (fahr <= UPPER) {
-    celsius = 5 * (fahr - 32) / 9;
-    printf("%d\t%d\n", fahr, celsius);
-    fahr = fahr + STEP;
+    celsius = 5.0 * (fahr - 32) / 9.0;
+    printf("%.f\t%.1f\n", fahr, celsius);
+    fahr += STEP;
   }
 }
-
-int main() { calc(); }
