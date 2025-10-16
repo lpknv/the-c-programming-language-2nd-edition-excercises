@@ -21,7 +21,7 @@ int _getline(char s[], int lim) {
 }
 
 /* copy: copy 'from' into 'to'; assume to is big enough */
-void copy(char to[], char from[]) {
+void copy(char from[], char to[]) {
   int i;
   i = 0;
   while ((to[i] = from[i]) != '\0')
@@ -40,7 +40,7 @@ int main() {
   while ((len = _getline(line, MAXLINE)) > 0)
     if (len > max) {
       max = len;
-      copy(longest, line);
+      copy(line, longest);
     }
 
   if (max > 0) /* there was a line */
