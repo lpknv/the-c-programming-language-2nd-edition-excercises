@@ -37,12 +37,12 @@ OUT="$FOLDER/$PROGRAM_NAME"
 mkdir -p "$FOLDER"
 
 LABEL="Exercise"
-EX_NUM="${FOLDER#*[!0-9]}"
+EX_NUM=""
 
-if [[ "$FOLDER" =~ ^[Cc][Hh]([0-9\-]+) ]]; then
+if [[ "$FOLDER" =~ ^[Cc][Hh][-]?([0-9.]+) ]]; then
   LABEL="Chapter"
   EX_NUM="${BASH_REMATCH[1]}"
-elif [[ "$FOLDER" =~ ^[Ee]([0-9\-]+) ]]; then
+elif [[ "$FOLDER" =~ ^[Ee][-]?([0-9.]+) ]]; then
   LABEL="Exercise"
   EX_NUM="${BASH_REMATCH[1]}"
 fi
