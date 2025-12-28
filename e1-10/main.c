@@ -19,6 +19,12 @@ int main() {
       break;
     case '\t':
       printf("\\t");
+        break;
+    case '\b':
+      printf("\\b");
+      break;
+    case '\\':
+      printf("\\\\");
       break;
     default:
       printf("%c", c);
