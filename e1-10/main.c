@@ -15,12 +15,10 @@ int main() {
   while ((c = getchar()) != EOF) {
     switch (c) {
     case '\n':
-      putchar('\\');
-      putchar('n');
+      printf("\\n");
       break;
     case '\t':
-      putchar('\\');
-      putchar('t');
+      printf("\\t");
       break;
     default:
       printf("%c", c);
