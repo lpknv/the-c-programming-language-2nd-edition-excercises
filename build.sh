@@ -66,7 +66,7 @@ else
 fi
 
 if [ $ONLY_ASSEMBLY -eq 1 ]; then
-  echo "→ creating assembly file with debug info..."
+  echo "creating assembly file with debug info..."
   gcc -S -g -fverbose-asm "$SRC" -o "$OUT".s
   gcc -c "$OUT".s -o "$OUT".o
   gcc "$OUT".o -o "$OUT"
@@ -78,7 +78,7 @@ if [ $ONLY_ASSEMBLY -eq 1 ]; then
   fi
   echo "✅ assembly file created: $OUT.s"
 else
-  echo "→ Compile $SRC..."
+  echo "Compile $SRC..."
   gcc "$SRC" -o "$OUT"
   if [ $? -ne 0 ]; then
     echo "❌ Failed to compile."

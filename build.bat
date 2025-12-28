@@ -76,7 +76,7 @@ echo }
 
 REM --- Compile ---
 if %ONLY_ASSEMBLY%==1 (
-    echo → creating assembly file with debug info...
+    echo creating assembly file with debug info...
     gcc -S -g -fverbose-asm "%SRC%" -o "%OUT%.s"
     if errorlevel 1 goto asm_fail
 
@@ -88,7 +88,7 @@ if %ONLY_ASSEMBLY%==1 (
     goto end
 )
 
-echo → Compile %SRC%...
+echo Compile %SRC%...
 gcc "%SRC%" -o "%OUT%.exe"
 if errorlevel 1 (
     echo ❌ Failed to compile.
