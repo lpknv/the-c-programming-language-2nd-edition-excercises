@@ -58,3 +58,4 @@ stamp-*
 
 .vscode
 main
+*.exe
