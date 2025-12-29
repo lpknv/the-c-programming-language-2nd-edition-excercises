@@ -1,6 +1,6 @@
-# The C Programming Language - 2nd Edition - Exercises
+# The C Programming Language - 1st Edition - Exercises
 
-This repository contains some exercises of the book The C Programming Language - 2nd Edition.
+This repository contains some exercises of the book The C Programming Language.
 Feel free to ramp up your C programming understanding.
 
 ## Usage
