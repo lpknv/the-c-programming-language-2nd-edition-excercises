@@ -96,7 +96,8 @@ if errorlevel 1 (
 )
 
 "%OUT%.exe"
-echo ✅ Compiled: %OUT%.exe
+
+echo Compiled: %OUT%.exe
 goto end
 
 :asm_fail
